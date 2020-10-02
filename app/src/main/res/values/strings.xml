@@ -2,8 +2,8 @@
     <string name="app_name">EjercicioMoviles</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Almi Studio</string>
+    <string name="nav_header_subtitle">almi.studio@almi.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Ajustes</string>
 
@@ -12,8 +12,6 @@
     <string name="menu_mapa">Mapa</string>
     <string name="cursos">CURSOS</string>
     <string name="title_activity_tab">TabActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
     <string name="interior">Interior</string>
     <string name="exterior">Exterior</string>
 </resources>

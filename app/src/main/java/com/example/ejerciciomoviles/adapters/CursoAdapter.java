@@ -14,12 +14,12 @@ import java.util.List;
 
 public class CursoAdapter extends BaseAdapter
 {
-    private Context context;
+    private Context miContext;
     private List<Curso> cursos;
 
     public CursoAdapter(Context context, List<Curso> cursos)
     {
-        this.context = context;
+        this.miContext = context;
         this.cursos = cursos;
     }
 
@@ -50,7 +50,7 @@ public class CursoAdapter extends BaseAdapter
     @Override
     public View getView(int position, View convertView, ViewGroup parent)
     {
-        LayoutInflater inflater = LayoutInflater.from(this.context);
+        LayoutInflater inflater = LayoutInflater.from(this.miContext);
         View fila = inflater.inflate(R.layout.curso_item,parent,false);
 
         TextView tvNombre = fila.findViewById(R.id.tvCurso);
@@ -58,4 +58,6 @@ public class CursoAdapter extends BaseAdapter
 
         return fila;
     }
+
+
 }

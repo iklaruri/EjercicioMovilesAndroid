@@ -2,16 +2,19 @@ package com.example.ejerciciomoviles.model;
 
 public class Curso
 {
-    private String nombre,imagen;
+    private String nombre, tipo;
+    private int imagen;
+
 
     public Curso()
     {
     }
 
-    public Curso(String nombre, String imagen)
+    public Curso(String nombre, int imagen, String tipo)
     {
         this.nombre = nombre;
         this.imagen = imagen;
+        this.tipo = tipo;
     }
 
     public String getNombre()
@@ -24,13 +27,23 @@ public class Curso
         this.nombre = nombre;
     }
 
-    public String getImagen()
+    public int getImagen()
     {
         return imagen;
     }
 
-    public void setImagen(String imagen)
+    public void setImagen(int imagen)
     {
         this.imagen = imagen;
+    }
+
+    public String getTipo()
+    {
+        return tipo;
+    }
+
+    public void setTipo(String tipo)
+    {
+        this.tipo = tipo;
     }
 }

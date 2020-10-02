@@ -7,4 +7,5 @@ import java.util.List;
 public interface ICursos
 {
     public void cargarCursos();
+    public void irInicio();
 }

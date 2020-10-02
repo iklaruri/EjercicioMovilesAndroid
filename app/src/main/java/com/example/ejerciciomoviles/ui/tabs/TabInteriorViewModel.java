@@ -1,4 +1,4 @@
-package com.example.ejerciciomoviles.tabs;
+package com.example.ejerciciomoviles.ui.tabs;
 
 import androidx.lifecycle.ViewModel;
 

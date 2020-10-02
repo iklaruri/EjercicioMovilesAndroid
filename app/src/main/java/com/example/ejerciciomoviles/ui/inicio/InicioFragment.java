@@ -1,7 +1,10 @@
 package com.example.ejerciciomoviles.ui.inicio;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Bundle;
+import android.transition.Transition;
+import android.transition.TransitionInflater;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +14,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -26,7 +30,6 @@ import java.util.List;
 public class InicioFragment extends Fragment {
 
     private InicioViewModel inicioViewModel;
-    private List<Curso> cursos;
     private Context miContext;
 
 
@@ -38,10 +41,14 @@ public class InicioFragment extends Fragment {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        Transition transition = TransitionInflater.from(miContext).inflateTransition(android.R.transition.explode);
+        transition.setDuration(1000);
+        setEnterTransition(transition);
     }
 
     @Override
@@ -67,15 +74,20 @@ public class InicioFragment extends Fragment {
         return vista;
     }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
     {
         super.onViewCreated(view, savedInstanceState);
+
     }
+
 
     @Override
     public void onViewStateRestored(@Nullable Bundle savedInstanceState)
     {
         super.onViewStateRestored(savedInstanceState);
     }
+
+
 }

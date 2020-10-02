@@ -7,10 +7,5 @@
     android:orientation="vertical"
     tools:context=".ui.mapa.MapaFragment">
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/vMapa"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_margin="25sp"/>
+
 </LinearLayout>
